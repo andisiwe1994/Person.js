@@ -1,7 +1,7 @@
-let  mytest  = require("../src/person");
-let person = new mytest ("Ryan", 30, "male","being a hardarse, agile, ssd hard drives")
+let  Person  = require("../src/person");
+let person = new Person ("Ryan", 30, "male",['being a hardarse', ' agile', ' ssd hard drives'])
 
-describe("hello method inside 'person' class", function() {
+describe("Person", function() {
 
 it ("should return name", function(){
     expect(person.name).toEqual("Ryan")
@@ -16,6 +16,9 @@ it ("should return gender", function(){
 })
 
 it ("should return interests", function(){
-    expect(person.interests).toEqual("being a hardarse, agile, ssd hard drives")
+    expect(person.interests).toEqual(['being a hardarse', ' agile', ' ssd hard drives'])
+})
+it ("should return hello", function(){
+    expect(person.hello()).toBe('Hello, my name is Ryan and I am 30 years old. My interests are being a hardarse, agile and ssd hard drives')
 })
 })
