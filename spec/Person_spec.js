@@ -19,6 +19,6 @@ it ("should return interests", function(){
     expect(person.interests).toEqual(['being a hardarse', ' agile', ' ssd hard drives'])
 })
 it ("should return hello", function(){
-    expect(person.hello()).toBe('Hello, my name is Ryan and I am 30 years old. My interests are being a hardarse, agile and ssd hard drives')
+    expect(person.hello()).toBe('Hello, my name is Ryan and I am 30 years old. My interests are being a hardarse, agile and ssd hard drives.')
 })
 })
